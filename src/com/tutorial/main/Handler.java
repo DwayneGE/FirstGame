@@ -12,7 +12,6 @@ public class Handler {
 			GameObject tempObject = object.get(i); 
 			tempObject.tick();
 		}
-		
 	}
 	
 	public void render(Graphics g) {
@@ -24,6 +23,10 @@ public class Handler {
 	
 	public void addObject(GameObject object) {
 		this.object.add(object);
+	}
+	
+	public void removeObject(GameObject object) {
+		this.object.remove(object);
 	}
 	
 }
